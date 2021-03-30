@@ -1,4 +1,8 @@
-# Tacotron 2 (without wavenet)
+# IPAtron
+
+This will be a modification of NVIDIA's tacotron 2 (an end-to-end, grapheme-to-speech engine), to make an accurate phoneme-to-speech model. Popular models have high WER for unseen words, and is quite cumbersome to add correct pronunciation, thus I decided to build my own model that takes correct IPA symbols as input and generates accurate speech as output.
+
+## Tacotron 2 (without wavenet)
 
 PyTorch implementation of [Natural TTS Synthesis By Conditioning
 Wavenet On Mel Spectrogram Predictions](https://arxiv.org/pdf/1712.05884.pdf). 
