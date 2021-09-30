@@ -10,7 +10,7 @@ def create_hparams(hparams_string=None, verbose=False):
         # Experiment Parameters        #
         ################################
         epochs=100000,
-        iters_per_checkpoint=500,
+        iters_per_checkpoint=100,
         seed=1234,
         dynamic_loss_scaling=True,
         fp16_run=False,
@@ -25,8 +25,8 @@ def create_hparams(hparams_string=None, verbose=False):
         # Data Parameters             #
         ################################
         load_mel_from_disk=False,
-        training_files='filelists/ljs_audio_text_train_filelist.txt',
-        validation_files='filelists/ljs_audio_text_val_filelist.txt',
+        training_files='filelists/may_training.txt',
+        validation_files='filelists/may_val.txt',
         text_cleaners=['basic_cleaners'],
 
         ################################
