@@ -50,8 +50,7 @@ def prepare_dataloaders(hparams):
         shuffle = False
     else:
         train_sampler = None
-        # shuffle = True
-        shuffle = False
+        shuffle = True        
 
     train_loader = DataLoader(trainset, num_workers=1, shuffle=shuffle,
                               sampler=train_sampler,
